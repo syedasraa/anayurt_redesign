@@ -1,0 +1,98 @@
+/* ============================================================
+   AnaYurt Uyghur — Design Tokens
+   Source: Figma Hi-Fi (DMKsrlPD7PuQsO93qoflOQ)
+   ============================================================ */
+
+:root {
+  /* ── BRAND COLOURS ── */
+  --color-primary:         #1F5560;   /* Deep Teal — navbar */
+  --color-primary-dark:    #163E47;   /* Darker teal — info strip */
+  --color-primary-hover:   #174650;   /* Navbar hover states */
+  --color-teal-mid:        #3F6669;   /* Imperial Teal — secondary accents */
+  --color-teal-muted:      #7EADA9;   /* Muted Teal — body text on dark */
+  --color-charcoal:        #111823;   /* Section dark bg */
+  --color-charcoal-deep:   #0A1118;   /* Footer bg */
+  --color-cream:           #D7C7A1;   /* Warm cream — headings on dark */
+  --color-cream-muted:     rgba(215, 199, 161, 0.75); /* Muted cream — labels */
+  --color-gold:            #C27E36;   /* Amber Gold — CTAs, prices, accents */
+  --color-gold-dark:       #A8692A;   /* Gold hover */
+  --color-gold-subtle:     rgba(194, 126, 54, 0.15); /* Gold tint */
+
+  /* ── SURFACE COLOURS ── */
+  --color-surface:         #FAFAF1;   /* Page background */
+  --color-surface-card:    #FFFFFF;   /* Card backgrounds */
+  --color-border:          #E8E4D9;   /* Warm border */
+  --color-border-dark:     rgba(255, 255, 255, 0.12); /* Borders on dark bg */
+
+  /* ── SEMANTIC ── */
+  --color-halal:           #2E7D32;
+  --color-veg:             #558B2F;
+  --color-warning-bg:      rgba(194, 126, 54, 0.15);
+  --color-warning-text:    #C27E36;
+  --color-muted-bg:        rgba(62, 80, 100, 0.25);
+  --color-muted-text:      #7EADA9;
+
+  /* ── TEXT ── */
+  --color-text-primary:    #111823;
+  --color-text-secondary:  #3F6669;
+  --color-text-muted:      #7EADA9;
+  --color-text-on-dark:    #FAFAF1;
+  --color-text-on-dark-sub: rgba(250, 250, 241, 0.7);
+
+  /* ── TYPOGRAPHY ── */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+
+  --text-hero:    clamp(2rem, 7vw, 3.2rem);
+  --text-h1:      clamp(1.75rem, 4vw, 2.5rem);
+  --text-h2:      clamp(1.25rem, 3vw, 1.75rem);
+  --text-h3:      1.125rem;
+  --text-body:    1rem;
+  --text-sm:      0.875rem;
+  --text-xs:      0.75rem;
+  --text-xxs:     0.6875rem;
+
+  /* ── SPACING (base-8) ── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* ── RADIUS ── */
+  --radius-sm:  4px;
+  --radius-md:  6px;
+  --radius-lg:  8px;
+  --radius-xl:  12px;
+  --radius-pill: 100px;
+
+  /* ── SHADOWS ── */
+  --shadow-card:       0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.14);
+  --shadow-sticky:     0 2px 16px rgba(0, 0, 0, 0.18);
+
+  /* ── TRANSITIONS ── */
+  --transition-fast:   150ms ease;
+  --transition-base:   200ms ease;
+  --transition-slow:   300ms ease;
+
+  /* ── LAYOUT ── */
+  --nav-height:   64px;
+  --max-width:    1280px;
+  --content-pad:  clamp(16px, 5vw, 48px);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

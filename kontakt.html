@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kontakt &amp; Anfahrt — AnaYurt Uyghur Duisburg</title>
+  <meta name="description" content="AnaYurt Uyghur Restaurant — Münzstraße 19, 47051 Duisburg. Öffnungszeiten, Telefon, WhatsApp, Google Maps und Online-Bestellung.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/kontakt.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="site-nav" role="navigation" aria-label="Hauptnavigation">
+    <a href="index.html" class="nav-logo" aria-label="AnaYurt Uyghur – Startseite">
+      <span class="nav-logo-text">
+        <span class="nav-logo-icon">۞</span>ANA YURT
+      </span>
+    </a>
+    <div class="nav-links" role="list">
+      <a href="index.html">Home</a>
+      <a href="speisekarte.html">Speisekarte</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html" aria-current="page">Kontakt</a>
+    </div>
+    <a href="https://www.lieferando.de/speisekarte/ana-yurt-uyghur" target="_blank" rel="noopener noreferrer" class="nav-cta">
+      Jetzt bestellen
+    </a>
+    <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-overlay" id="mobileNav" role="navigation" aria-label="Mobilnavigation">
+    <a href="index.html">Home</a>
+    <a href="speisekarte.html">Speisekarte</a>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="kontakt.html" aria-current="page">Kontakt</a>
+    <a href="https://www.lieferando.de/speisekarte/ana-yurt-uyghur" target="_blank" rel="noopener noreferrer" class="nav-cta-mobile">
+      Jetzt bestellen →
+    </a>
+  </div>
+
+  <main id="main">
+
+    <!-- ─────────────────────────────────────
+         PAGE HEADER
+         Figma: title + address subtitle
+    ───────────────────────────────────── -->
+    <section class="kontakt-header">
+      <div class="kontakt-header__inner">
+        <h1 class="kontakt-header__title">Kontakt &amp; Anfahrt</h1>
+        <p class="kontakt-header__sub">Münzstraße 19 · 47051 Duisburg</p>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         ACTION CARDS ROW
+         Figma: 3 cards — Anrufen / WhatsApp / Route planen
+         FR-21, FR-22, FR-26
+    ───────────────────────────────────── -->
+    <section class="action-cards" aria-label="Schnellkontakt">
+      <div class="action-cards__inner">
+
+        <a href="tel:+491723570835" class="action-card" aria-label="AnaYurt anrufen: 0172 357 0835">
+          <div class="action-card__icon" aria-hidden="true">📞</div>
+          <div class="action-card__label">Anrufen</div>
+          <div class="action-card__sub">0172 357 0835</div>
+        </a>
+
+        <a
+          href="https://wa.me/491723570835?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Tisch%20reservieren."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="action-card"
+          aria-label="Per WhatsApp kontaktieren (öffnet WhatsApp)"
+        >
+          <div class="action-card__icon" aria-hidden="true">💬</div>
+          <div class="action-card__label">WhatsApp</div>
+          <div class="action-card__sub">Nachricht senden</div>
+        </a>
+
+        <a
+          href="https://maps.google.com/?q=Münzstraße+19,+47051+Duisburg"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="action-card"
+          aria-label="Route nach AnaYurt planen (öffnet Google Maps)"
+        >
+          <div class="action-card__icon" aria-hidden="true">🗺️</div>
+          <div class="action-card__label">Route planen</div>
+          <div class="action-card__sub">Google Maps</div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         GOOGLE MAPS EMBED
+         D-009: static image linking to Maps
+         (live iframe avoided for performance)
+    ───────────────────────────────────── -->
+    <section class="map-section" aria-label="Standort auf Karte">
+      <!--
+        OPTION A (recommended for performance — D-009):
+        A static map screenshot linking to Google Maps.
+        Take a screenshot of maps.google.com at the address and save as:
+        assets/images/about/map-static.webp (800px wide, WebP)
+        Then set it as the img src below.
+
+        OPTION B: Replace the <a> + <img> below with a live iframe:
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."
+          width="100%" height="280" style="border:0;display:block;"
+          allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="AnaYurt Uyghur auf Google Maps">
+        </iframe>
+        Get the embed URL from Google Maps → Share → Embed a map.
+      -->
+      <a
+        href="https://maps.google.com/?q=Münzstraße+19,+47051+Duisburg"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="map-link"
+        aria-label="Karte in Google Maps öffnen"
+      >
+        <div class="map-placeholder" role="img" aria-label="Karte: AnaYurt Uyghur, Münzstraße 19, 47051 Duisburg">
+          <img
+            src="assets/images/about/map-static.webp"
+            alt="Kartenausschnitt: AnaYurt Uyghur, Münzstraße 19, Duisburg"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          >
+          <!-- Shown when no static map image yet -->
+          <div class="map-placeholder__fallback">
+            <div class="map-placeholder__pin" aria-hidden="true">📍</div>
+            <div class="map-placeholder__address">
+              <strong>AnaYurt Uyghur</strong><br>
+              Münzstraße 19<br>
+              47051 Duisburg
+            </div>
+            <div class="map-placeholder__cta">In Google Maps öffnen →</div>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         OPENING HOURS TABLE
+         FR-21: full weekly hours, today highlighted
+         hours.js handles the live highlighting
+    ───────────────────────────────────── -->
+    <section class="hours-section" aria-labelledby="hours-title">
+      <div class="hours-section__inner">
+
+        <div class="hours-block">
+          <h2 class="hours-block__title" id="hours-title">Öffnungszeiten</h2>
+          <div class="gold-bar"></div>
+
+          <!-- Live open/closed status -->
+          <div class="hours-status">
+            <span class="open-status" aria-live="polite">Geöffnet</span>
+            <span class="today-hours" aria-live="polite"></span>
+          </div>
+
+          <table class="hours-table" aria-label="Öffnungszeiten der ganzen Woche">
+            <tbody>
+              <tr class="hours-row" data-day="1">
+                <td class="hours-row__day">Montag</td>
+                <td class="hours-row__time">12:00 – 22:00 Uhr</td>
+              </tr>
+              <tr class="hours-row" data-day="2">
+                <td class="hours-row__day">Dienstag</td>
+                <td class="hours-row__time hours-row__time--closed">Geschlossen</td>
+              </tr>
+              <tr class="hours-row" data-day="3">
+                <td class="hours-row__day">Mittwoch</td>
+                <td class="hours-row__time">12:00 – 22:00 Uhr</td>
+              </tr>
+              <tr class="hours-row" data-day="4">
+                <td class="hours-row__day">Donnerstag</td>
+                <td class="hours-row__time">12:00 – 22:00 Uhr</td>
+              </tr>
+              <tr class="hours-row" data-day="5">
+                <td class="hours-row__day">Freitag</td>
+                <td class="hours-row__time">15:00 – 22:00 Uhr</td>
+              </tr>
+              <tr class="hours-row" data-day="6">
+                <td class="hours-row__day">Samstag</td>
+                <td class="hours-row__time">12:00 – 22:00 Uhr</td>
+              </tr>
+              <tr class="hours-row" data-day="0">
+                <td class="hours-row__day">Sonntag</td>
+                <td class="hours-row__time">12:00 – 22:00 Uhr</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="hours-note">
+            🍚 <strong>Polo</strong> (Reisgericht) nur samstags verfügbar.<br>
+            🔥 <strong>Tonur Kebab</strong> nur auf Vorbestellung.
+          </p>
+        </div>
+
+        <!-- Address + contact column -->
+        <div class="contact-block">
+          <h2 class="hours-block__title">Adresse &amp; Kontakt</h2>
+          <div class="gold-bar"></div>
+
+          <address class="contact-address">
+            <strong>AnaYurt Uyghur Restaurant</strong><br>
+            Münzstraße 19<br>
+            47051 Duisburg<br>
+            Deutschland
+          </address>
+
+          <div class="contact-links">
+            <a href="tel:+491723570835" class="contact-link" aria-label="Anrufen: 0172 357 0835">
+              <span class="contact-link__icon" aria-hidden="true">📞</span>
+              <span>0172 357 0835</span>
+            </a>
+            <a
+              href="https://wa.me/491723570835?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20Kontakt%20aufnehmen."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link"
+              aria-label="WhatsApp schreiben (öffnet WhatsApp)"
+            >
+              <span class="contact-link__icon" aria-hidden="true">💬</span>
+              <span>WhatsApp schreiben</span>
+            </a>
+            <a
+              href="https://maps.google.com/?q=Münzstraße+19,+47051+Duisburg"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link"
+              aria-label="Route planen (öffnet Google Maps)"
+            >
+              <span class="contact-link__icon" aria-hidden="true">📍</span>
+              <span>Route planen</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         RESERVATION CTA
+         FR-22: Tisch reservieren via phone / WhatsApp
+         D-004: no booking system, WhatsApp redirect
+    ───────────────────────────────────── -->
+    <section class="reservation-cta" aria-labelledby="reserve-title">
+      <div class="reservation-cta__inner">
+        <div class="reservation-cta__text">
+          <h2 class="reservation-cta__title" id="reserve-title">Tisch reservieren</h2>
+          <p class="reservation-cta__sub">
+            Rufen Sie uns an oder schreiben Sie via WhatsApp — wir melden uns umgehend.
+          </p>
+          <a href="tel:+491723570835" class="reservation-cta__phone">
+            📞 0172 357 0835
+          </a>
+        </div>
+        <a
+          href="https://wa.me/491723570835?text=Hallo%2C%20ich%20m%C3%B6chte%20einen%20Tisch%20reservieren.%20Datum%3A%20"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--primary"
+          aria-label="Tisch per WhatsApp reservieren (öffnet WhatsApp)"
+        >
+          Per WhatsApp reservieren →
+        </a>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         ORDERING PLATFORMS
+         FR-07: Lieferando + Uber Eats
+    ───────────────────────────────────── -->
+    <section class="ordering-section" aria-labelledby="order-title">
+      <div class="ordering-section__inner">
+        <h2 class="ordering-section__title" id="order-title">Online bestellen</h2>
+
+        <div class="ordering-platforms">
+
+          <a
+            href="https://www.lieferando.de/speisekarte/ana-yurt-uyghur"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="platform-card"
+            aria-label="Bei Lieferando bestellen (öffnet in neuem Tab)"
+          >
+            <div class="platform-card__name" style="color:#FF8000;">Lieferando</div>
+            <div class="platform-card__sub">Jetzt bestellen</div>
+            <div class="platform-card__arrow" aria-hidden="true">→</div>
+          </a>
+
+          <a
+            href="https://www.ubereats.com/de/store/ana-yurt-uyghur/duisburg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="platform-card"
+            aria-label="Bei Uber Eats bestellen (öffnet in neuem Tab)"
+          >
+            <div class="platform-card__name" style="color:#06C167;">Uber Eats</div>
+            <div class="platform-card__sub">Jetzt bestellen</div>
+            <div class="platform-card__arrow" aria-hidden="true">→</div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">ANA YURT</div>
+        <nav class="footer-nav" aria-label="Footer-Navigation">
+          <a href="speisekarte.html">Speisekarte</a>
+          <a href="ueber-uns.html">Über uns</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+        <p class="footer-address">Münzstraße 19 &middot; 47051 Duisburg &middot; &copy; 2025 AnaYurt Uyghur</p>
+        <p class="footer-cert">HALAL-ZERTIFIZIERT &middot; TÄGLICH FRISCH</p>
+      </div>
+      <div>
+        <p style="font-size:var(--text-xxs);font-weight:600;letter-spacing:.08em;color:var(--color-gold);text-transform:uppercase;margin-bottom:var(--space-3);">Kontakt</p>
+        <p style="font-size:var(--text-xs);color:var(--color-teal-muted);line-height:1.8;">
+          <a href="tel:+491723570835" style="color:inherit;">📞 0172 357 0835</a><br>
+          <a href="https://wa.me/491723570835" target="_blank" rel="noopener noreferrer" style="color:inherit;">💬 WhatsApp schreiben</a>
+        </p>
+      </div>
+      <div>
+        <p style="font-size:var(--text-xxs);font-weight:600;letter-spacing:.08em;color:var(--color-gold);text-transform:uppercase;margin-bottom:var(--space-3);">Öffnungszeiten</p>
+        <p style="font-size:var(--text-xs);color:var(--color-teal-muted);line-height:1.9;">
+          Mo: 12:00 – 22:00<br>Di: Geschlossen<br>Mi – Do: 12:00 – 22:00<br>Fr: 15:00 – 22:00<br>Sa / So: 12:00 – 22:00
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/491723570835?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20Kontakt%20aufnehmen." target="_blank" rel="noopener noreferrer" class="whatsapp-fab" aria-label="Per WhatsApp kontaktieren">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="js/nav.js"></script>
+  <script src="js/hours.js"></script>
+</body>
+</html>

@@ -1,11 +1,579 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AnaYurt Uyghur — Authentische uigurische Küche in Duisburg</title>
+  <meta name="description" content="AnaYurt Uyghur Restaurant in Duisburg. Authentische Gerichte der Seidenstraße — täglich frisch, halal-zertifiziert. Münzstraße 19, 47051 Duisburg.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    
+
+  <!-- SKIP LINK -->
+  <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="site-nav" role="navigation" aria-label="Hauptnavigation">
+    <a href="index.html" class="nav-logo" aria-label="AnaYurt Uyghur – Startseite">
+      <!--
+        LOGO SWAP: once you have your logo file, replace the <span> below with:
+        <img src="assets/images/logo/anayurt-logo.svg" alt="AnaYurt Uyghur" height="36" width="auto">
+      -->
+      <!-- <span class="nav-logo-text" aria-hidden="false">
+        <span class="nav-logo-icon">۞</span>ANA YURT
+      </span> -->
+ <img src="assets/images/logo/logo.png" alt="۞ AnaYurt Uyghur" height="36" width="auto">
+
+    </a>
+
+    <div class="nav-links" role="list">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="speisekarte.html">Speisekarte</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+
+    <a
+      href="https://www.lieferando.de/speisekarte/ana-yurt-uyghur"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="nav-cta"
+      aria-label="Jetzt online bestellen (öffnet in neuem Tab)"
+    >
+      Jetzt bestellen
+    </a>
+
+    <button
+      class="hamburger"
+      aria-label="Menü öffnen"
+      aria-expanded="false"
+      aria-controls="mobileNav"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="mobileNav" role="navigation" aria-label="Mobilnavigation">
+    <a href="index.html">Home</a>
+    <a href="speisekarte.html">Speisekarte</a>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a
+      href="https://www.lieferando.de/speisekarte/ana-yurt-uyghur"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="nav-cta-mobile"
+    >
+      Jetzt bestellen →
+    </a>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════ -->
+  <main id="main">
+
+    <!-- ─────────────────────────────────────
+         HERO
+         Figma: full-viewport, food photo bg,
+         gradient overlay, headline + 2 CTAs
+    ───────────────────────────────────── -->
+    <section class="hero" aria-label="Hero">
+
+      <!-- Background photo -->
+      <div class="hero__bg" aria-hidden="true">
+        <!--
+          Replace src with your hero food photo (landscape, WebP, 1440px wide).
+          Recommended shots: Laghman, Polo, Lammspieße.
+          Until you have photos, remove the <img> tag — the dark bg will show.
+        -->
+        <img
+          src="assets/images/hero/hero-homepage.webp"
+          alt=""
+          width="1440"
+          height="900"
+          loading="eager"
+          fetchpriority="high"
+          onerror="this.style.display='none'"
+        >
+      </div>
+
+      <!-- Opening hours badge — top-right, desktop only -->
+      <div class="hero__hours-badge" aria-hidden="true">
+        <strong>ÖFFNUNGSZEITEN</strong>
+        Mo: 12:00 – 22:00<br>
+        Di: Geschlossen<br>
+        Mi: 12:00 – 22:00<br>
+        Do: 12:00 – 22:00<br>
+        Fr: 15:00 – 22:00<br>
+        Sa/So: 12:00 – 22:00
+      </div>
+
+      <!-- Headline + CTAs -->
+      <div class="hero__content">
+        <p class="hero__eyebrow">Authentische uigurische Küche</p>
+
+        <h1 class="hero__headline">
+          Erleben Sie den<br>
+          Geschmack der<br>
+          Seidenstraße
+        </h1>
+
+        <span class="hero__accent" aria-hidden="true"></span>
+
+        <div class="hero__actions">
+          <a href="speisekarte.html" class="btn btn--primary">
+            Speisekarte →
+          </a>
+          <a
+            href="https://wa.me/491723570835?text=Hallo%2C%20ich%20m%C3%B6chte%20einen%20Tisch%20reservieren."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--outline"
+          >
+            Tisch reservieren
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         GEOMETRIC DIVIDER (Figma pattern)
+    ───────────────────────────────────── -->
+    <div class="geo-divider" aria-hidden="true">
+      ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇
+    </div>
+
+    <!-- ─────────────────────────────────────
+         INFO STRIP
+         Figma: 3-column dark teal strip —
+         Öffnungszeiten | Adresse | Kontakt
+         FR-08: hours visible above fold
+    ───────────────────────────────────── -->
+    <section class="info-strip" aria-label="Öffnungszeiten, Adresse und Kontakt">
+      <div class="info-strip__inner">
+
+        <!-- Col 1: Opening hours -->
+        <div class="info-strip__col">
+          <div class="info-strip__label">
+            <span class="info-strip__dot" aria-hidden="true"></span>
+            Öffnungszeiten
+          </div>
+          <div class="info-strip__main">
+            <span class="open-status" aria-live="polite">Geöffnet</span>
+          </div>
+          <div class="info-strip__main hours-list">
+            Mo: 12:00 – 22:00<br>
+            Di: Geschlossen<br>
+            Mi – Do: 12:00 – 22:00<br>
+            Fr: 15:00 – 22:00<br>
+            Sa / So: 12:00 – 22:00
+          </div>
+        </div>
+
+        <!-- Col 2: Address -->
+        <div class="info-strip__col">
+          <div class="info-strip__label">
+            <span class="info-strip__dot" aria-hidden="true"></span>
+            Adresse
+          </div>
+          <div class="info-strip__main">Münzstraße 19</div>
+          <div class="info-strip__sub">47051 Duisburg</div>
+          <a
+            href="https://maps.google.com/?q=Münzstraße+19,+47051+Duisburg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="info-strip__link"
+            aria-label="Route nach AnaYurt planen (öffnet Google Maps)"
+          >
+            Route planen →
+          </a>
+        </div>
+
+        <!-- Col 3: Contact -->
+        <div class="info-strip__col">
+          <div class="info-strip__label">
+            <span class="info-strip__dot" aria-hidden="true"></span>
+            Kontakt
+          </div>
+          <div class="info-strip__main">Anrufen</div>
+          <div class="info-strip__sub">
+            <a href="tel:+491723570835" class="info-strip__link" style="font-size:11px; color: var(--color-cream-muted);">
+              0172 357 0835
+            </a>
+          </div>
+          <a
+            href="https://wa.me/491723570835?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20Kontakt%20aufnehmen."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="info-strip__link"
+            aria-label="Per WhatsApp kontaktieren (öffnet WhatsApp)"
+          >
+            WhatsApp →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         GEOMETRIC DIVIDER
+    ───────────────────────────────────── -->
+    <div class="geo-divider" aria-hidden="true">
+      ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇
+    </div>
+
+    <!-- ─────────────────────────────────────
+         CUISINE INTRO SECTION
+         Figma: dark bg, image left, text right.
+         D-008: cultural story here, not on menu.
+    ───────────────────────────────────── -->
+    <section class="cuisine-intro" aria-labelledby="cuisine-heading">
+      <div class="cuisine-intro__inner">
+
+        <!-- Photo -->
+        <div class="cuisine-intro__image">
+          <!--
+            Replace with restaurant interior/atmosphere photo (WebP, 800px wide).
+            Aspect ratio 4:3.
+          -->
+          <img
+            src="assets/images/about/restaurant-interior.webp"
+            alt="Das Innere des AnaYurt Restaurants — warme Atmosphäre, authentisches Ambiente"
+            loading="lazy"
+            onerror="this.parentElement.innerHTML='<div class=img-placeholder>🏮 Restaurantfoto</div>'"
+          >
+        </div>
+
+        <!-- Text -->
+        <div class="cuisine-intro__text">
+          <span class="section-eyebrow">Uigurische Küche</span>
+          <div class="gold-bar"></div>
+          <h2 class="cuisine-intro__heading" id="cuisine-heading">
+            Entstanden entlang<br>der Seidenstraße
+          </h2>
+          <p class="cuisine-intro__body">
+            Frisch, handwerklich, authentisch — täglich zubereitet.
+            Die uigurische Küche verbindet Ost und West, Gewürze und Traditionen,
+            über Jahrhunderte gereift auf dem Weg zwischen China und Europa.
+          </p>
+          <a href="ueber-uns.html" class="cuisine-intro__cta">
+            Über uns &amp; unsere Geschichte →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         MENU CATEGORY PREVIEW
+         Figma: off-white bg, 3 category cards,
+         full-width CTA button below.
+         FR-09: category preview cards
+    ───────────────────────────────────── -->
+    <section class="menu-preview" aria-labelledby="menu-preview-heading">
+      <div class="menu-preview__inner">
+
+        <div class="menu-preview__header">
+          <h2 class="menu-preview__title" id="menu-preview-heading">
+            Unsere Speisekarte
+          </h2>
+          <p class="menu-preview__subtitle">Authentische Gerichte — täglich frisch zubereitet</p>
+        </div>
+
+        <div class="category-cards">
+
+          <!-- Card 1: Nudelgerichte -->
+          <a href="speisekarte.html#nudelgerichte" class="category-card" aria-label="Nudelgerichte ansehen">
+            <!--
+              Replace with food photo (WebP, 600px wide).
+              Until photos are ready, the placeholder div shows.
+            -->
+            <img
+              class="category-card__img"
+              src="assets/images/dishes/laghman.webp"
+              alt="Handgezogene uigurische Nudeln — Leghmen"
+              loading="lazy"
+              onerror="this.outerHTML='<div class=\'category-card__img-placeholder\'>🍜</div>'"
+            >
+            <div class="category-card__body">
+              <div class="category-card__name">Nudelgerichte</div>
+              <div class="category-card__meta">
+                <span class="category-card__desc">Leghmen · Bandnudeln · Suppen</span>
+                <span class="category-card__arrow" aria-hidden="true">→</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 2: Hauptgerichte -->
+          <a href="speisekarte.html#hauptgerichte" class="category-card" aria-label="Hauptgerichte ansehen">
+            <img
+              class="category-card__img"
+              src="assets/images/dishes/lammspies.webp"
+              alt="Gegrillte Lammspieße mit uigurischen Gewürzen"
+              loading="lazy"
+              onerror="this.outerHTML='<div class=\'category-card__img-placeholder\'>🥩</div>'"
+            >
+            <div class="category-card__body">
+              <div class="category-card__name">Hauptgerichte</div>
+              <div class="category-card__meta">
+                <span class="category-card__desc">Lamm · Hähnchen · Spezialitäten</span>
+                <span class="category-card__arrow" aria-hidden="true">→</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 3: Teigtaschen & Spezialitäten -->
+          <a href="speisekarte.html#teigtaschen" class="category-card" aria-label="Teigtaschen und Spezialitäten ansehen">
+            <img
+              class="category-card__img"
+              src="assets/images/dishes/samsa.webp"
+              alt="Uigurische Teigtaschen — gedämpft und gebraten"
+              loading="lazy"
+              onerror="this.outerHTML='<div class=\'category-card__img-placeholder\'>🥟</div>'"
+            >
+            <div class="category-card__body">
+              <div class="category-card__name">Teigtaschen</div>
+              <div class="category-card__meta">
+                <span class="category-card__desc">Gedämpft · Gebraten · Gekocht</span>
+                <span class="category-card__arrow" aria-hidden="true">→</span>
+              </div>
+            </div>
+          </a>
+
+        </div><!-- .category-cards -->
+
+        <!-- Full-width CTA -->
+        <div class="menu-preview__cta-row">
+          <a href="speisekarte.html" class="btn btn--teal" style="width: 100%; max-width: 100%; justify-content: center;">
+            Alle Gerichte ansehen →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         GALLERY SECTION
+         Figma: charcoal bg, 2×2 photo grid
+    ───────────────────────────────────── -->
+    <section class="gallery-section" aria-labelledby="gallery-heading">
+      <div class="gallery-section__inner">
+        <h2 class="gallery-section__title" id="gallery-heading">Das Restaurant</h2>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item">
+            <img
+              src="assets/images/about/innenraum.webp"
+              alt="Innenraum des AnaYurt Restaurants — warme Beleuchtung, traditionelles Ambiente"
+              loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>📷 Innenraum</div>'"
+            >
+            <span class="gallery-item__label">Innenraum</span>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="assets/images/about/eingang.webp"
+              alt="Eingang des AnaYurt Restaurants in der Münzstraße 19, Duisburg"
+              loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>📷 Eingang</div>'"
+            >
+            <span class="gallery-item__label">Eingang</span>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="assets/images/about/atmosphaere.webp"
+              alt="Atmosphäre im AnaYurt — Gäste genießen authentische uigurische Küche"
+              loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>📷 Atmosphäre</div>'"
+            >
+            <span class="gallery-item__label">Atmosphäre</span>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="assets/images/about/speisen.webp"
+              alt="Frisch zubereitete uigurische Speisen — handwerklich und authentisch"
+              loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=img-placeholder>📷 Speisen</div>'"
+            >
+            <span class="gallery-item__label">Frisch zubereitet</span>
+          </div>
+
+        </div><!-- .gallery-grid -->
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         ORDERING PLATFORMS
+         Figma: Lieferando + Uber Eats banners
+         FR-07: dual platform ordering display
+         D-004: redirects to external platforms
+    ───────────────────────────────────── -->
+    <section
+      style="background: var(--color-surface); padding: var(--space-10) var(--content-pad); border-top: 1px solid var(--color-border);"
+      aria-labelledby="order-heading"
+    >
+      <div style="max-width: var(--max-width); margin: 0 auto; text-align: center;">
+        <span class="section-eyebrow">Online bestellen</span>
+        <h2
+          id="order-heading"
+          style="font-family: var(--font-display); font-size: var(--text-h2); color: var(--color-text-primary); margin: var(--space-2) 0 var(--space-6); line-height: 1.2;"
+        >
+          Lieferung nach Hause
+        </h2>
+        <div style="display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center;">
+
+          <a
+            href="https://www.lieferando.de/speisekarte/ana-yurt-uyghur"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Bei Lieferando bestellen (öffnet in neuem Tab)"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 4px;
+              background: white;
+              border: 1.5px solid var(--color-border);
+              border-radius: var(--radius-lg);
+              padding: var(--space-4) var(--space-8);
+              text-decoration: none;
+              min-width: 180px;
+              transition: box-shadow var(--transition-base), transform var(--transition-base);
+              box-shadow: var(--shadow-card);
+            "
+            onmouseover="this.style.boxShadow='var(--shadow-card-hover)';this.style.transform='translateY(-2px)'"
+            onmouseout="this.style.boxShadow='var(--shadow-card)';this.style.transform=''"
+          >
+            <span style="font-size: 1.125rem; font-weight: 700; color: #FF8000;">Lieferando</span>
+            <span style="font-size: var(--text-xs); color: var(--color-text-secondary);">Jetzt bestellen</span>
+          </a>
+
+          <a
+            href="https://www.ubereats.com/de/store/ana-yurt-uyghur/duisburg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Bei Uber Eats bestellen (öffnet in neuem Tab)"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 4px;
+              background: white;
+              border: 1.5px solid var(--color-border);
+              border-radius: var(--radius-lg);
+              padding: var(--space-4) var(--space-8);
+              text-decoration: none;
+              min-width: 180px;
+              transition: box-shadow var(--transition-base), transform var(--transition-base);
+              box-shadow: var(--shadow-card);
+            "
+            onmouseover="this.style.boxShadow='var(--shadow-card-hover)';this.style.transform='translateY(-2px)'"
+            onmouseout="this.style.boxShadow='var(--shadow-card)';this.style.transform=''"
+          >
+            <span style="font-size: 1.125rem; font-weight: 700; color: #06C167;">Uber Eats</span>
+            <span style="font-size: var(--text-xs); color: var(--color-text-secondary);">Jetzt bestellen</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /#main -->
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+
+      <!-- Brand + nav links -->
+      <div>
+        <div class="footer-brand">ANA YURT</div>
+        <nav class="footer-nav" aria-label="Footer-Navigation">
+          <a href="speisekarte.html">Speisekarte</a>
+          <a href="ueber-uns.html">Über uns</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+        <p class="footer-address">
+          Münzstraße 19 &middot; 47051 Duisburg &middot; &copy; 2025 AnaYurt Uyghur
+        </p>
+        <p class="footer-cert">HALAL-ZERTIFIZIERT &middot; TÄGLICH FRISCH</p>
+      </div>
+
+      <!-- Contact column -->
+      <div>
+        <p style="font-size: var(--text-xxs); font-weight: 600; letter-spacing: 0.08em; color: var(--color-gold); text-transform: uppercase; margin-bottom: var(--space-3);">Kontakt</p>
+        <p style="font-size: var(--text-xs); color: var(--color-teal-muted); line-height: 1.8;">
+          <a href="tel:+491723570835" style="color: inherit; transition: color var(--transition-fast);"
+             onmouseover="this.style.color='var(--color-cream)'" onmouseout="this.style.color=''">
+            📞 0172 357 0835
+          </a><br>
+          <a
+            href="https://wa.me/491723570835"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: inherit; transition: color var(--transition-fast);"
+            onmouseover="this.style.color='var(--color-cream)'" onmouseout="this.style.color=''"
+          >
+            💬 WhatsApp schreiben
+          </a>
+        </p>
+      </div>
+
+      <!-- Hours column -->
+      <div>
+        <p style="font-size: var(--text-xxs); font-weight: 600; letter-spacing: 0.08em; color: var(--color-gold); text-transform: uppercase; margin-bottom: var(--space-3);">Öffnungszeiten</p>
+        <p style="font-size: var(--text-xs); color: var(--color-teal-muted); line-height: 1.9;">
+          Mo: 12:00 – 22:00<br>
+          Di: Geschlossen<br>
+          Mi – Do: 12:00 – 22:00<br>
+          Fr: 15:00 – 22:00<br>
+          Sa / So: 12:00 – 22:00
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       WHATSAPP FAB (mobile only — FR-04)
+  ═══════════════════════════════════════ -->
+  <a
+    href="https://wa.me/491723570835?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20Kontakt%20aufnehmen."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp-fab"
+    aria-label="Per WhatsApp kontaktieren"
+  >
+    <!-- WhatsApp SVG icon -->
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/nav.js"></script>
+  <script src="js/hours.js"></script>
+
 </body>
 </html>

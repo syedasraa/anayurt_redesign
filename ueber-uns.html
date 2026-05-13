@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Über uns — AnaYurt Uyghur Duisburg</title>
+  <meta name="description" content="Die Geschichte von AnaYurt Uyghur in Duisburg. Authentische uigurische Küche — entstanden entlang der Seidenstraße. Täglich frisch, halal-zertifiziert seit 2019.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/uber-uns.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="site-nav" role="navigation" aria-label="Hauptnavigation">
+    <a href="index.html" class="nav-logo" aria-label="AnaYurt Uyghur – Startseite">
+      <span class="nav-logo-text">
+        <span class="nav-logo-icon">۞</span>ANA YURT
+      </span>
+    </a>
+    <div class="nav-links" role="list">
+      <a href="index.html">Home</a>
+      <a href="speisekarte.html">Speisekarte</a>
+      <a href="ueber-uns.html" aria-current="page">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+    <a href="https://www.lieferando.de/speisekarte/ana-yurt-uyghur" target="_blank" rel="noopener noreferrer" class="nav-cta">
+      Jetzt bestellen
+    </a>
+    <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-overlay" id="mobileNav" role="navigation" aria-label="Mobilnavigation">
+    <a href="index.html">Home</a>
+    <a href="speisekarte.html">Speisekarte</a>
+    <a href="ueber-uns.html" aria-current="page">Über uns</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="https://www.lieferando.de/speisekarte/ana-yurt-uyghur" target="_blank" rel="noopener noreferrer" class="nav-cta-mobile">
+      Jetzt bestellen →
+    </a>
+  </div>
+
+  <main id="main">
+
+    <!-- ─────────────────────────────────────
+         HERO PHOTO + PAGE TITLE
+         Figma: restaurant photo, title overlaid below
+    ───────────────────────────────────── -->
+    <section class="about-hero" aria-label="Über AnaYurt">
+      <div class="about-hero__img-wrap">
+        <img
+          src="assets/images/about/restaurant-interior.webp"
+          alt="Innenraum des AnaYurt Restaurants — warme Atmosphäre, authentisches Ambiente"
+          loading="eager"
+          fetchpriority="high"
+          onerror="this.parentElement.classList.add('no-img')"
+        >
+        <div class="about-hero__img-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="about-hero__title-wrap">
+        <h1 class="about-hero__title">Unsere Geschichte</h1>
+        <div class="gold-bar"></div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         GEOMETRIC DIVIDER
+    ───────────────────────────────────── -->
+    <div class="geo-divider" aria-hidden="true">
+      ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇
+    </div>
+
+    <!-- ─────────────────────────────────────
+         UYGHUR CUISINE SECTION
+         Figma: heading + long body text
+         FR-20: cultural explanation in German
+         D-008: cultural depth lives here, not menu
+    ───────────────────────────────────── -->
+    <section class="about-cuisine" aria-labelledby="cuisine-title">
+      <div class="about-cuisine__inner">
+        <div class="about-cuisine__text">
+          <span class="section-eyebrow">Uigurische Küche</span>
+          <div class="gold-bar"></div>
+          <h2 class="about-section-title" id="cuisine-title">Uigurische Küche</h2>
+          <div class="about-body-text">
+            <p>
+              Die uigurische Küche ist über Jahrhunderte entlang der Seidenstraße entstanden
+              und zählt zu den ältesten und reichsten Küchentraditionen Zentralasiens.
+              In dieser Region, die Ost und West verbindet, vereinen sich unterschiedliche
+              Kulturen, Gewürze und Kochtechniken.
+            </p>
+            <p>
+              Sauberkeit, Frische und handwerkliche Zubereitung stehen in der uigurischen
+              Küche an erster Stelle. Alle Speisen werden täglich frisch zubereitet,
+              Teige von Hand geknetet und Nudeln traditionell gezogen.
+            </p>
+            <p>
+              Essen bedeutet in der uigurischen Kultur nicht nur Sättigung, sondern auch
+              Respekt, Verantwortung und Gastfreundschaft.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         THREE PILLARS
+         Figma: 3-column icon + label + description
+    ───────────────────────────────────── -->
+    <section class="about-pillars" aria-label="Unsere Werte">
+      <div class="about-pillars__inner">
+
+        <div class="pillar">
+          <div class="pillar__icon" aria-hidden="true">🌿</div>
+          <h3 class="pillar__title">Täglich frisch</h3>
+          <p class="pillar__desc">Alle Zutaten frisch beschafft und täglich zubereitet — keine Kompromisse.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar__icon" aria-hidden="true">✋</div>
+          <h3 class="pillar__title">Handwerklich</h3>
+          <p class="pillar__desc">Nudeln von Hand gezogen, Teige von Hand geknetet — so wie es Tradition verlangt.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar__icon" aria-hidden="true">🏠</div>
+          <h3 class="pillar__title">Authentisch</h3>
+          <p class="pillar__desc">Rezepte aus uigurischer Tradition, weitergegeben über Generationen.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         CHEF / RESTAURANT QUOTE
+         Figma: large quotation mark, quote text, avatar + name
+         FR-23: chef/owner personal story
+    ───────────────────────────────────── -->
+    <section class="about-quote" aria-label="Unser Versprechen">
+      <div class="about-quote__inner">
+        <div class="about-quote__mark" aria-hidden="true">&ldquo;</div>
+        <blockquote class="about-quote__text">
+          Im Ana Yurt bewahren wir diese Tradition und bringen ehrliche,
+          saubere und authentische uigurische Küche nach Duisburg.
+        </blockquote>
+        <div class="about-quote__attribution">
+          <div class="about-quote__avatar" aria-hidden="true">
+            <!--
+              Replace with chef/owner photo:
+              <img src="assets/images/about/chef.webp" alt="Inhaber von AnaYurt">
+              Until then the initials placeholder shows.
+            -->
+            <span class="about-quote__initials">AY</span>
+          </div>
+          <div>
+            <div class="about-quote__name">Ana Yurt Uyghur Restaurant</div>
+            <div class="about-quote__role">Duisburg, seit 2019</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         HALAL CERTIFICATE BANNER
+         FR-13 / multiple personas require this
+    ───────────────────────────────────── -->
+    <section class="halal-banner" aria-label="Halal-Zertifizierung">
+      <div class="halal-banner__inner">
+        <div class="halal-banner__check" aria-hidden="true">✓</div>
+        <div>
+          <div class="halal-banner__title">Halal-zertifiziert</div>
+          <div class="halal-banner__sub">
+            Alle Gerichte zubereitet nach islamischen Speisegesetzen
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+         CTA STRIP
+         Figma: "Besuchen Sie uns" + 2 buttons
+    ───────────────────────────────────── -->
+    <section class="about-cta" aria-label="Weiter erkunden">
+      <div class="about-cta__inner">
+        <h2 class="about-cta__heading">Besuchen Sie uns in Duisburg</h2>
+        <div class="about-cta__buttons">
+          <a href="speisekarte.html" class="btn btn--primary">
+            Speisekarte ansehen →
+          </a>
+          <a href="kontakt.html" class="btn btn--ghost">
+            Kontakt &amp; Anfahrt →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">ANA YURT</div>
+        <nav class="footer-nav" aria-label="Footer-Navigation">
+          <a href="speisekarte.html">Speisekarte</a>
+          <a href="ueber-uns.html">Über uns</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+        <p class="footer-address">Münzstraße 19 &middot; 47051 Duisburg &middot; &copy; 2025 AnaYurt Uyghur</p>
+        <p class="footer-cert">HALAL-ZERTIFIZIERT &middot; TÄGLICH FRISCH</p>
+      </div>
+      <div>
+        <p style="font-size:var(--text-xxs);font-weight:600;letter-spacing:.08em;color:var(--color-gold);text-transform:uppercase;margin-bottom:var(--space-3);">Kontakt</p>
+        <p style="font-size:var(--text-xs);color:var(--color-teal-muted);line-height:1.8;">
+          <a href="tel:+491723570835" style="color:inherit;">📞 0172 357 0835</a><br>
+          <a href="https://wa.me/491723570835" target="_blank" rel="noopener noreferrer" style="color:inherit;">💬 WhatsApp schreiben</a>
+        </p>
+      </div>
+      <div>
+        <p style="font-size:var(--text-xxs);font-weight:600;letter-spacing:.08em;color:var(--color-gold);text-transform:uppercase;margin-bottom:var(--space-3);">Öffnungszeiten</p>
+        <p style="font-size:var(--text-xs);color:var(--color-teal-muted);line-height:1.9;">
+          Mo: 12:00 – 22:00<br>Di: Geschlossen<br>Mi – Do: 12:00 – 22:00<br>Fr: 15:00 – 22:00<br>Sa / So: 12:00 – 22:00
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/491723570835?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20Kontakt%20aufnehmen." target="_blank" rel="noopener noreferrer" class="whatsapp-fab" aria-label="Per WhatsApp kontaktieren">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
