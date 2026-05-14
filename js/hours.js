@@ -29,11 +29,16 @@
     var day = now.getDay();
     var hour = now.getHours() + now.getMinutes() / 60;
     var range = HOURS[day];
-    if (!range) return { open: false, label: 'Geschlossen', today: 'Heute geschlossen' };
+    if (!range) return { open: false, label: 'Jetzt geschlossen', today: 'Heute geschlossen' };
     var open = hour >= range[0] && hour < range[1];
+    var opensLater = hour < range[0];
+    var label = open ? 'Jetzt geöffnet'
+               : opensLater ? 'Öffnet um ' + range[0] + ':00 Uhr'
+               : 'Jetzt geschlossen';
     return {
       open: open,
-      label: open ? 'Geöffnet' : 'Geschlossen',
+      opensLater: opensLater,
+      label: label,
       today: 'Heute: ' + formatHours(range),
     };
   }
@@ -49,8 +54,11 @@
     var status = getStatus();
     els.forEach(function (el) {
       el.textContent = status.label;
+      el.classList.remove('closed', 'opens-later');
       if (status.open) {
-        el.classList.remove('closed');
+        // green — already handled by default styles
+      } else if (status.opensLater) {
+        el.classList.add('opens-later');
       } else {
         el.classList.add('closed');
       }

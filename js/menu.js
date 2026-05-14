@@ -14,13 +14,13 @@
           {
             id: 'kalte-salate', name: 'Kalte Salate',
             dishes: [
-              { id:'dish-01', number:1,  name:'Rindfleisch Salat',                     description:'Zartes Rindfleisch in aromatischem Chiliöl mit Gewürzen',                  price:7.90,  protein:'Rind',        spice:'medium', dietary:['halal'],               chefPick:false, availability:'always',        image:'assets/images/dishes/rindfleisch-salat.webp' },
-              { id:'dish-02', number:2,  name:'Hühnchen Fleisch Salat mit Chilisauce', description:'Zartes Hühnchen in würziger Chilisauce',                                   price:6.90,  protein:'Hähnchen',    spice:'medium', dietary:['halal'],               chefPick:false, availability:'always',        image:'assets/images/dishes/huehnchen-salat.webp' },
-              { id:'dish-03', number:3,  name:'Auberginen Salat',                      description:'Frische Auberginen mit Gewürzen und Kräutern',                             price:4.90,  protein:'Vegetarisch', spice:'mild',   dietary:['halal','vegetarisch'], chefPick:false, availability:'always',        image:'assets/images/dishes/auberginen-salat.webp' },
-              { id:'dish-04', number:4,  name:'Gurken Salat',                          description:'Frischer Gurkensalat mit leichter Würzung',                                price:4.90,  protein:'Vegetarisch', spice:'mild',   dietary:['halal','vegetarisch'], chefPick:false, availability:'always',        image:'assets/images/dishes/gurken-salat.webp' },
-              { id:'dish-05', number:5,  name:'Uyghur Salat',                          description:'Gemüse mit würzigem Dressing nach uigurischer Art',                        price:4.90,  protein:'Vegetarisch', spice:'mild',   dietary:['halal','vegetarisch'], chefPick:false, availability:'always',        image:'assets/images/dishes/uyghur-salat.webp' },
-              { id:'dish-06', number:6,  name:'Karotten Salat',                        description:'Frische Karotten mit leichter Würzung',                                    price:4.90,  protein:'Vegetarisch', spice:'mild',   dietary:['halal','vegetarisch'], chefPick:false, availability:'always',        image:'assets/images/dishes/karotten-salat.webp' },
-              { id:'dish-28', number:28, name:'Nudelsalat mit Rindfleisch',            description:'Breite Nudeln mit zartem Fleisch, Gemüse und würziger Sauce',              price:13.90, protein:'Rind',        spice:'medium', dietary:['halal'],               chefPick:false, availability:'always',        image:'assets/images/dishes/nudelsalat-rind.webp' }
+              { id:'dish-01', number:1,  name:'Rindfleisch Salat',                     description:'Zartes Rindfleisch in aromatischem Chiliöl mit Gewürzen',                  price:7.90,  protein:'Rind',        spice:'medium', dietary:['halal'],               chefPick:false, availability:'always',        image:'assets/images/dishes/dish menu/Rindflesisch-in-Chiliol.jpg' },
+              { id:'dish-02', number:2,  name:'Hühnchen Fleisch Salat mit Chilisauce', description:'Zartes Hühnchen in würziger Chilisauce',                                   price:6.90,  protein:'Hähnchen',    spice:'medium', dietary:['halal'],               chefPick:false, availability:'always',        image:'assets/images/dishes/dish menu/Huhnchen-in-Chilisobe.jpg' },
+              { id:'dish-03', number:3,  name:'Auberginen Salat',                      description:'Frische Auberginen mit Gewürzen und Kräutern',                             price:4.90,  protein:'Vegetarisch', spice:'mild',   dietary:['halal','vegetarisch'], chefPick:false, availability:'always',        image:'assets/images/dishes/dish menu/Auberginen-Salat.jpg' },
+              { id:'dish-04', number:4,  name:'Gurken Salat',                          description:'Frischer Gurkensalat mit leichter Würzung',                                price:4.90,  protein:'Vegetarisch', spice:'mild',   dietary:['halal','vegetarisch'], chefPick:false, availability:'always',        image:'assets/images/dishes/dish menu/Gurken-Salat-768x768.jpg' },
+              { id:'dish-05', number:5,  name:'Uyghur Salat',                          description:'Gemüse mit würzigem Dressing nach uigurischer Art',                        price:4.90,  protein:'Vegetarisch', spice:'mild',   dietary:['halal','vegetarisch'], chefPick:false, availability:'always',        image:'assets/images/dishes/dish menu/Uyghur-Salat-768x768.jpg' },
+              { id:'dish-06', number:6,  name:'Karotten Salat',                        description:'Frische Karotten mit leichter Würzung',                                    price:4.90,  protein:'Vegetarisch', spice:'mild',   dietary:['halal','vegetarisch'], chefPick:false, availability:'always',        image:'assets/images/dishes/dish menu/Karotten-Salat-768x768.jpg' },
+              { id:'dish-28', number:28, name:'Nudelsalat mit Rindfleisch',            description:'Breite Nudeln mit zartem Fleisch, Gemüse und würziger Sauce',              price:13.90, protein:'Rind',        spice:'medium', dietary:['halal'],               chefPick:false, availability:'always',        image:'assets/images/dishes/dish menu/nudelsalat-mit-Rindfleisch-768x768.jpg' }
             ]
           }
         ]
@@ -31,19 +31,19 @@
           {
             id: 'gebratene-nudeln', name: 'Gebratene Nudelgerichte',
             dishes: [
-              { id:'dish-07', number:7,  name:'Gebratene Nudeln mit Bärlauch',           description:'Gebratene Nudeln mit aromatischem Bärlauch und Gewürzen',           price:13.90, protein:'Vegetarisch', spice:'mild',   dietary:['halal','vegetarisch'], chefPick:false, availability:'always', image:'assets/images/dishes/nudeln-baerlauch.webp' },
-              { id:'dish-12', number:12, name:'Gebratene Nudeln mit Fleisch und Gemüse', description:'Gebratene Nudeln mit frischem Gemüse und aromatischen Gewürzen',    price:13.90, protein:'Lamm',        spice:'mild',   dietary:['halal'],               chefPick:false, availability:'always', image:'assets/images/dishes/nudeln-fleisch-gemuese.webp' },
-              { id:'dish-15', number:15, name:'Gebratene Hähnchen mit Nudeln',           description:'Gebratenes Hähnchen mit Nudeln und Gemüse in würziger Sauce',       price:17.90, protein:'Hähnchen',    spice:'medium', dietary:['halal'],               chefPick:false, availability:'always', image:'assets/images/dishes/haehnchen-nudeln.webp' }
+              { id:'dish-07', number:7,  name:'Gebratene Nudeln mit Bärlauch',           description:'Gebratene Nudeln mit aromatischem Bärlauch und Gewürzen',           price:13.90, protein:'Vegetarisch', spice:'mild',   dietary:['halal','vegetarisch'], chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Gebratene-Nudeln-mit-barlauch.jpg' },
+              { id:'dish-12', number:12, name:'Gebratene Nudeln mit Fleisch und Gemüse', description:'Gebratene Nudeln mit frischem Gemüse und aromatischen Gewürzen',    price:13.90, protein:'Lamm',        spice:'mild',   dietary:['halal'],               chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Gebratene-Nudeln-mit-Gemuse-768x768.jpg' },
+              { id:'dish-15', number:15, name:'Gebratene Hähnchen mit Nudeln',           description:'Gebratenes Hähnchen mit Nudeln und Gemüse in würziger Sauce',       price:17.90, protein:'Hähnchen',    spice:'medium', dietary:['halal'],               chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Gebratene-Hahnchen-mit-Nudeln-768x768.jpg' }
             ]
           },
           {
             id: 'leghmen', name: 'Handgezogene Uyghur-Nudeln (Leghmen)',
             dishes: [
-              { id:'dish-08', number:8,  name:'ANA YURT Leghmen',          description:'Handgezogene Nudeln mit Gemüse und Lammfleisch — Hausrezept',          price:14.90, protein:'Lamm', spice:'medium', dietary:['halal'], chefPick:true,  availability:'always', image:'assets/images/dishes/ana-yurt-leghmen.webp' },
-              { id:'dish-09', number:9,  name:'Leghmen',                   description:'Handgezogene Nudeln mit Fleisch, Gemüse und würziger Sauce',           price:12.90, protein:'Lamm', spice:'medium', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/leghmen.webp' },
-              { id:'dish-10', number:10, name:'Suyru Leghmen',             description:'Uigurische Nudelsuppe mit Lammfleisch und handgezogenen Nudeln',       price:13.90, protein:'Lamm', spice:'medium', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/suyru-leghmen.webp' },
-              { id:'dish-11', number:11, name:'Dindin Nudeln',             description:'Kleingeschnittene Nudeln mit Rindfleisch, Gemüse und würziger Sauce',  price:13.90, protein:'Rind', spice:'medium', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/dindin-nudeln.webp' },
-              { id:'dish-29', number:29, name:'Bandnudeln mit Rindfleisch',description:'Breite Bandnudeln mit Fleisch und würzigem Dressing',                  price:14.90, protein:'Rind', spice:'medium', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/bandnudeln-rind.webp' }
+              { id:'dish-08', number:8,  name:'ANA YURT Leghmen',          description:'Handgezogene Nudeln mit Gemüse und Lammfleisch — Hausrezept',          price:14.90, protein:'Lamm', spice:'medium', dietary:['halal'], chefPick:true,  availability:'always', image:'assets/images/dishes/dish menu/ANA-YURT-Leghmen-768x768.jpg' },
+              { id:'dish-09', number:9,  name:'Leghmen',                   description:'Handgezogene Nudeln mit Fleisch, Gemüse und würziger Sauce',           price:12.90, protein:'Lamm', spice:'medium', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Leghmen-768x768.jpg' },
+              { id:'dish-10', number:10, name:'Suyru Leghmen',             description:'Uigurische Nudelsuppe mit Lammfleisch und handgezogenen Nudeln',       price:13.90, protein:'Lamm', spice:'medium', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Suyru-Leghmen-768x768.jpg' },
+              { id:'dish-11', number:11, name:'Dindin Nudeln',             description:'Kleingeschnittene Nudeln mit Rindfleisch, Gemüse und würziger Sauce',  price:13.90, protein:'Rind', spice:'medium', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Dindin-Nudeln-768x768.jpg' },
+              { id:'dish-29', number:29, name:'Bandnudeln mit Rindfleisch',description:'Breite Bandnudeln mit Fleisch und würzigem Dressing',                  price:14.90, protein:'Rind', spice:'medium', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Bandnudeln mit rindfleish.jpg' }
             ]
           }
         ]
@@ -54,8 +54,8 @@
           {
             id: 'nudelsuppen', name: 'Nudelsuppen',
             dishes: [
-              { id:'dish-26', number:26, name:'Geschmorte Rindfleischsuppe mit Nudeln', description:'Kräftige Nudelsuppe mit geschmortem Rindfleisch und Gewürzen',          price:13.90, protein:'Rind', spice:'medium', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/rindfleischsuppe-nudeln.webp' },
-              { id:'dish-27', number:27, name:'Klassische Nudelsuppe',                  description:'Traditionelle Suppe mit Nudeln, Gemüse und aromatischen Gewürzen',     price:12.90, protein:'Lamm', spice:'mild',   dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/klassische-nudelsuppe.webp' }
+              { id:'dish-26', number:26, name:'Geschmorte Rindfleischsuppe mit Nudeln', description:'Kräftige Nudelsuppe mit geschmortem Rindfleisch und Gewürzen',          price:13.90, protein:'Rind', spice:'medium', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Geschorte-Rindfleisch_Nudel-Suppe.jpg' },
+              { id:'dish-27', number:27, name:'Klassische Nudelsuppe',                  description:'Traditionelle Suppe mit Nudeln, Gemüse und aromatischen Gewürzen',     price:12.90, protein:'Lamm', spice:'mild',   dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Klassische-Nudelsuppe.jpg' }
             ]
           }
         ]
@@ -63,9 +63,9 @@
       {
         id: 'teigtaschen', name: 'Teigtaschen / Dumplings / Momo Art',
         subcategories: [
-          { id:'gedaempft', name:'Gedämpft',  dishes:[ { id:'dish-17', number:17, name:'Gedämpfte Teigtaschen',  description:'Zart gedämpfte Teigtaschen gefüllt mit Fleisch und Gewürzen',  price:7.90,  protein:'Lamm', spice:'mild', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/gedaempfte-teigtaschen.webp' } ] },
-          { id:'gebraten',  name:'Gebraten', dishes:[ { id:'dish-18', number:18, name:'Gebratene Teigtaschen',  description:'Knusprig gebratene Teigtaschen mit Fleischfüllung',             price:7.90,  protein:'Lamm', spice:'mild', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/gebratene-teigtaschen.webp' } ] },
-          { id:'gekocht',   name:'Gekocht',  dishes:[ { id:'dish-20', number:20, name:'Gekochte Teigtaschen',   description:'Zart gekochte Teigtaschen gefüllt mit Fleisch und Gewürzen',   price:13.90, protein:'Lamm', spice:'mild', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/gekochte-teigtaschen.webp' } ] }
+          { id:'gedaempft', name:'Gedämpft',  dishes:[ { id:'dish-17', number:17, name:'Gedämpfte Teigtaschen',  description:'Zart gedämpfte Teigtaschen gefüllt mit Fleisch und Gewürzen',  price:7.90,  protein:'Lamm', spice:'mild', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Gedampfte-Teigtaschen.jpg' } ] },
+          { id:'gebraten',  name:'Gebraten', dishes:[ { id:'dish-18', number:18, name:'Gebratene Teigtaschen',  description:'Knusprig gebratene Teigtaschen mit Fleischfüllung',             price:7.90,  protein:'Lamm', spice:'mild', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Gebratene-Teigtaschen-768x768.jpg' } ] },
+          { id:'gekocht',   name:'Gekocht',  dishes:[ { id:'dish-20', number:20, name:'Gekochte Teigtaschen',   description:'Zart gekochte Teigtaschen gefüllt mit Fleisch und Gewürzen',   price:13.90, protein:'Lamm', spice:'mild', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Gekochte-Teigaschen-768x768.jpg' } ] }
         ]
       },
       {
@@ -74,36 +74,36 @@
           {
             id: 'gebratene-fleischgerichte', name: 'Gebratene Fleischgerichte',
             dishes: [
-              { id:'dish-13', number:13, name:'Kung Pao Huhn',                     description:'Gebratenes Huhn mit Erdnüssen, Gemüse und Chilisauce',                price:15.90, protein:'Hähnchen',    spice:'hot',    dietary:['halal'],               chefPick:false, availability:'always', image:'assets/images/dishes/kung-pao-huhn.webp' },
-              { id:'dish-14', number:14, name:'Groß Teller Hähnchen',              description:'Große Portion gebratenes Hähnchen mit Gemüse und Gewürzen',           price:14.90, priceLabel:'14,90 / 39,90 \u20ac', protein:'Hähnchen', spice:'medium', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/gross-teller-haehnchen.webp' },
-              { id:'dish-16', number:16, name:'Gebratenes Lammfleisch mit Gemüse', description:'Zart gebratenes Lammfleisch mit frischem Gemüse und Gewürzen',        price:15.90, protein:'Lamm',        spice:'medium', dietary:['halal'],               chefPick:false, availability:'always', image:'assets/images/dishes/lammfleisch-gemuese.webp' },
-              { id:'dish-21', number:21, name:'Gebratenes Lammfleisch',            description:'Zart gebratenes Lammfleisch mit aromatischen Gewürzen',               price:20.90, protein:'Lamm',        spice:'medium', dietary:['halal'],               chefPick:false, availability:'always', image:'assets/images/dishes/gebratenes-lammfleisch.webp' },
-              { id:'dish-25', number:25, name:'Gebratener Spinat mit Ei',          description:'Frischer Spinat gebraten mit Ei und Gewürzen',                        price:10.90, protein:'Vegetarisch', spice:'mild',   dietary:['halal','vegetarisch'], chefPick:false, availability:'always', image:'assets/images/dishes/spinat-ei.webp' }
+              { id:'dish-13', number:13, name:'Kung Pao Huhn',                     description:'Gebratenes Huhn mit Erdnüssen, Gemüse und Chilisauce',                price:15.90, protein:'Hähnchen',    spice:'hot',    dietary:['halal'],               chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Kung-Pao-Huhn-768x768.jpg' },
+              { id:'dish-14', number:14, name:'Groß Teller Hähnchen',              description:'Große Portion gebratenes Hähnchen mit Gemüse und Gewürzen',           price:14.90, priceLabel:'14,90 / 39,90 \u20ac', protein:'Hähnchen', spice:'medium', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Gros-teller-Hahnchen-768x768.jpg' },
+              { id:'dish-16', number:16, name:'Gebratenes Lammfleisch mit Gemüse', description:'Zart gebratenes Lammfleisch mit frischem Gemüse und Gewürzen',        price:15.90, protein:'Lamm',        spice:'medium', dietary:['halal'],               chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Gebratene-Lammfleisch-mit-Gemuse - 768x768.jpg' },
+              { id:'dish-21', number:21, name:'Gebratenes Lammfleisch',            description:'Zart gebratenes Lammfleisch mit aromatischen Gewürzen',               price:20.90, protein:'Lamm',        spice:'medium', dietary:['halal'],               chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Gebratenes-Lammfleisch-768x768.jpg' },
+              { id:'dish-25', number:25, name:'Gebratener Spinat mit Ei',          description:'Frischer Spinat gebraten mit Ei und Gewürzen',                        price:10.90, protein:'Vegetarisch', spice:'mild',   dietary:['halal','vegetarisch'], chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Gebratene-Spinat-mit-Ei-768x768.jpg' }
             ]
           },
           {
             id: 'grill-ofen', name: 'Grill / Ofen-Spezialitäten',
             dishes: [
-              { id:'dish-22', number:22, name:'Lammspieße',  description:'Gegrillte Lammspieße mit uigurischen Gewürzen',              price:11.90, priceLabel:'11,90 / 14,90 \u20ac', protein:'Lamm', spice:'medium', dietary:['halal'], chefPick:true,  availability:'always',       image:'assets/images/dishes/lammspies.webp' },
-              { id:'dish-23', number:23, name:'Tonur Kebab', description:'Im Tonur-Ofen gegartes Lammfleisch nach uigurischer Art',     price:69.90, protein:'Lamm', spice:'medium', dietary:['halal'], chefPick:false, availability:'advance-order', image:'assets/images/dishes/tonur-kebab.webp' }
+              { id:'dish-22', number:22, name:'Lammspieße',  description:'Gegrillte Lammspieße mit uigurischen Gewürzen',              price:11.90, priceLabel:'11,90 / 14,90 \u20ac', protein:'Lamm', spice:'medium', dietary:['halal'], chefPick:true,  availability:'always',       image:'assets/images/dishes/dish menu/Lammspiebe-768x768.jpg' },
+              { id:'dish-23', number:23, name:'Tonur Kebab', description:'Im Tonur-Ofen gegartes Lammfleisch nach uigurischer Art',     price:69.90, protein:'Lamm', spice:'medium', dietary:['halal'], chefPick:false, availability:'advance-order', image:'assets/images/dishes/dish menu/Tonur-Kebab-768x768.jpg' }
             ]
           },
           {
             id: 'reisgerichte', name: 'Reisgerichte',
             dishes: [
-              { id:'dish-24', number:24, name:'Polo', description:'Uigurischer Reis mit Lammfleisch, Karotten und Gewürzen', price:14.90, protein:'Lamm', spice:'mild', dietary:['halal'], chefPick:true, availability:'saturday-only', image:'assets/images/dishes/polo.webp' }
+              { id:'dish-24', number:24, name:'Polo', description:'Uigurischer Reis mit Lammfleisch, Karotten und Gewürzen', price:14.90, protein:'Lamm', spice:'mild', dietary:['halal'], chefPick:true, availability:'saturday-only', image:'assets/images/dishes/dish menu/Polo-768x768.jpg' }
             ]
           },
           {
             id: 'brot-spezialitaeten', name: 'Brot & Spezialitäten',
             dishes: [
-              { id:'dish-19', number:19, name:'Göchnan', description:'Uigurisches gedämpftes Brot, serviert mit Fleisch und Gemüse', price:11.90, protein:'Lamm', spice:'mild', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/goechnan.webp' }
+              { id:'dish-19', number:19, name:'Göchnan', description:'Uigurisches gedämpftes Brot, serviert mit Fleisch und Gemüse', price:11.90, protein:'Lamm', spice:'mild', dietary:['halal'], chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Gochnan-768x768.jpg' }
             ]
           },
           {
             id: 'extras', name: 'Extras',
             dishes: [
-              { id:'dish-30', number:30, name:'Extra Nudeln / Reis', description:'Zusätzliche Portion Nudeln oder Reis', price:2.50, protein:'Vegetarisch', spice:null, dietary:['halal','vegetarisch'], chefPick:false, availability:'always', image:null }
+              { id:'dish-30', number:30, name:'Extra Nudeln / Reis', description:'Zusätzliche Portion Nudeln oder Reis', price:2.50, protein:'Vegetarisch', spice:null, dietary:['halal','vegetarisch'], chefPick:false, availability:'always', image:'assets/images/dishes/dish menu/Extra-Nudeln-Reis.jpg'}
             ]
           }
         ]

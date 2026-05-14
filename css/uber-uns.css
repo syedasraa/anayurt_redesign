@@ -13,15 +13,13 @@
 .about-hero__img-wrap {
   position: relative;
   width: 100%;
-  height: 260px;
   overflow: hidden;
 }
 
 .about-hero__img-wrap img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 40%;
+  height: auto;
+  display: block;
   display: block;
 }
 
@@ -301,16 +299,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .about-hero__img-wrap {
-    height: 320px;
-  }
 }
 
 @media (min-width: 768px) {
-  .about-hero__img-wrap {
-    height: 380px;
-  }
-
   .about-cta__buttons .btn {
     min-width: 200px;
   }
