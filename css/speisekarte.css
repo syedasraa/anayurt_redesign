@@ -529,3 +529,300 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ═══════════════════════════════════════════
+   DISH DETAIL MODAL (Figma frame 91:22)
+   Bottom-sheet on mobile · Centred dialog on desktop
+═══════════════════════════════════════════ */
+
+/* Prevent body scroll when modal open */
+body.modal-open { overflow: hidden; }
+
+/* ── Overlay ── */
+.dish-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  background: rgba(17, 24, 35, 0.55);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  display: flex;
+  align-items: flex-end;       /* bottom-sheet on mobile */
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease;
+}
+.dish-modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ── Sheet ── */
+.dish-modal {
+  background: var(--color-surface, #FAFAF1);
+  width: 100%;
+  max-width: 480px;
+  max-height: 92dvh;
+  border-radius: 20px 20px 0 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  transform: translateY(100%);
+  transition: transform 280ms cubic-bezier(0.32, 0.72, 0, 1);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.dish-modal::-webkit-scrollbar { display: none; }
+
+.dish-modal-overlay.is-open .dish-modal {
+  transform: translateY(0);
+}
+
+/* ── Photo area ── */
+.dish-modal__photo-wrap {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  background: var(--color-primary, #1F5560);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.dish-modal__photo-wrap--no-image {
+  height: 80px;
+}
+
+.dish-modal__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.dish-modal__photo-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.45));
+  pointer-events: none;
+}
+
+/* ── Close button ── */
+.dish-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(17, 24, 35, 0.45);
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: background 150ms ease;
+  z-index: 10;
+}
+.dish-modal__close:hover { background: rgba(17, 24, 35, 0.7); }
+.dish-modal__close:focus-visible {
+  outline: 3px solid var(--color-gold, #C27E36);
+  outline-offset: 2px;
+}
+
+/* ── Body content ── */
+.dish-modal__body {
+  padding: 16px 20px 32px;
+  position: relative;
+}
+
+/* Badges row */
+.dish-modal__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.dish-modal__badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.dish-modal__badge--protein {
+  background: rgba(31, 85, 96, 0.10);
+  color: var(--color-primary, #1F5560);
+  border: 1px solid rgba(31, 85, 96, 0.25);
+}
+.dish-modal__badge--halal {
+  background: rgba(46, 125, 50, 0.10);
+  color: #2E7D32;
+  border: 1px solid rgba(46, 125, 50, 0.25);
+}
+.dish-modal__badge--veg {
+  background: rgba(85, 139, 47, 0.10);
+  color: #558B2F;
+  border: 1px solid rgba(85, 139, 47, 0.25);
+}
+.dish-modal__badge--special {
+  background: rgba(194, 126, 54, 0.12);
+  color: var(--color-gold, #C27E36);
+  border: 1px solid rgba(194, 126, 54, 0.3);
+}
+
+/* Dish number (top-right of badges row) */
+.dish-modal__number {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 11px;
+  color: rgba(17, 24, 35, 0.35);
+  font-family: var(--font-body, 'Inter', sans-serif);
+}
+
+/* Title */
+.dish-modal__title {
+  font-family: var(--font-display, 'Playfair Display', serif);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-charcoal, #111823);
+  line-height: 1.25;
+  margin: 0 0 10px;
+}
+
+/* Gold accent bar */
+.dish-modal__gold-bar {
+  width: 32px;
+  height: 2px;
+  background: var(--color-gold, #C27E36);
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.dish-modal__desc {
+  font-size: 13px;
+  color: rgba(17, 24, 35, 0.75);
+  line-height: 1.6;
+  margin: 0 0 0;
+}
+
+/* Divider */
+.dish-modal__divider {
+  height: 0.5px;
+  background: rgba(17, 24, 35, 0.08);
+  margin: 16px 0;
+}
+
+/* Ingredients section */
+.dish-modal__section-label {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: rgba(17, 24, 35, 0.40);
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.dish-modal__ingredients {
+  font-size: 12px;
+  color: rgba(17, 24, 35, 0.60);
+  line-height: 1.6;
+  margin: 0 0 8px;
+}
+
+.dish-modal__allergens {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(163, 45, 45, 0.80);
+  margin: 0;
+}
+
+/* Footer: price + CTA */
+.dish-modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dish-modal__price {
+  font-family: var(--font-display, 'Playfair Display', serif);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-gold, #C27E36);
+  white-space: nowrap;
+}
+
+.dish-modal__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 22px;
+  background: var(--color-gold, #C27E36);
+  color: #fff;
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 150ms ease, transform 100ms ease;
+  min-width: 0;
+  flex-shrink: 0;
+}
+.dish-modal__cta:hover { background: #a96a2a; }
+.dish-modal__cta:active { transform: scale(0.97); }
+.dish-modal__cta:focus-visible {
+  outline: 3px solid var(--color-gold, #C27E36);
+  outline-offset: 2px;
+}
+
+/* Delivery note below CTA */
+.dish-modal__cta-note {
+  font-size: 10px;
+  color: rgba(17, 24, 35, 0.35);
+  text-align: right;
+  margin: 8px 0 0;
+}
+
+/* Drag handle at bottom */
+.dish-modal__handle {
+  width: 200px;
+  max-width: 60%;
+  height: 4px;
+  background: rgba(17, 24, 35, 0.15);
+  border-radius: 2px;
+  margin: 20px auto 0;
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .dish-modal-overlay,
+  .dish-modal {
+    transition: none !important;
+  }
+}
+
+/* ── Desktop: centred dialog ── */
+@media (min-width: 640px) {
+  .dish-modal-overlay { align-items: center; }
+  .dish-modal {
+    border-radius: 16px;
+    max-height: 88dvh;
+    transform: scale(0.95) translateY(8px);
+  }
+  .dish-modal-overlay.is-open .dish-modal {
+    transform: scale(1) translateY(0);
+  }
+  .dish-modal__photo-wrap { height: 300px; }
+  .dish-modal__handle { display: none; }
+}
